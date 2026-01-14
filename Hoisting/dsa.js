@@ -10,4 +10,18 @@
 // var c = 30;
 
 
-console.log(a)
+// console.log(a)
+
+// 1. Function Declaration
+function add(a, b) {
+  return a + b;
+}
+
+// 2. Function Expression
+const add2 = function (a, b) {
+  return a + b;
+};
+
+// 3. Arrow Function
+const add3 = (a, b) => a + b;
+ add3(2,5)
