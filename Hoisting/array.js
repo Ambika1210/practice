@@ -21,6 +21,16 @@
 // counter();
 
 
-console.log(a);
-var a = 10;
-console.log(a);
+// console.log(a);
+// var a = 10;
+// console.log(a);
+
+
+function addNumbers(a, b) {
+  return a + b;
+}
+const num1 = 5;
+const num2 = 10;
+
+const result = addNumbers(num1, num2);
+console.log("Sum:", result);
