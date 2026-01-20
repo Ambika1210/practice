@@ -26,11 +26,18 @@
 // console.log(a);
 
 
-function addNumbers(a, b) {
-  return a + b;
-}
-const num1 = 5;
-const num2 = 10;
+// function addNumbers(a, b) {
+//   return a + b;
+// }
+// const num1 = 5;
+// const num2 = 10;
 
-const result = addNumbers(num1, num2);
-console.log("Sum:", result);
+// const result = addNumbers(num1, num2);
+// console.log("Sum:", result);
+
+// map exmaple
+const nums = [1, 2, 3, 4];
+
+const squares = nums.map(num => num * num);
+
+console.log(squares);
