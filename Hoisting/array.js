@@ -36,8 +36,16 @@
 // console.log("Sum:", result);
 
 // map exmaple
-const nums = [1, 2, 3, 4];
+// const nums = [1, 2, 3, 4];
 
-const squares = nums.map(num => num * num);
+// const squares = nums.map(num => num * num);
 
-console.log(squares);
+// console.log(squares);
+
+// filter example
+
+const nums = [1, 2, 3, 4, 5, 6];
+
+const evenNumbers = nums.filter(num => num % 2 === 0);
+
+console.log(evenNumbers);
