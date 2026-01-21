@@ -49,3 +49,15 @@ const nums = [1, 2, 3, 4, 5, 6];
 const evenNumbers = nums.filter(num => num % 2 === 0);
 
 console.log(evenNumbers);
+
+// reduce example
+const users = [
+  { name: "A", age: 20 },
+  { name: "B", age: 17 },
+  { name: "C", age: 25 }
+];
+const names = users
+  .filter(user => user.age >= 18)
+  .map(user => user.name);
+
+console.log(names);
