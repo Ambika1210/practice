@@ -61,3 +61,14 @@ const names = users
   .map(user => user.name);
 
 console.log(names);
+
+function greet(name, callback) {
+  console.log("Hello " + name);
+  callback();
+}
+
+function sayBye() {
+  console.log("Bye!");
+}
+
+greet("Ambika", sayBye);
