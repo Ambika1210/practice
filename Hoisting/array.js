@@ -72,3 +72,18 @@ function sayBye() {
 }
 
 greet("Ambika", sayBye);
+
+
+
+
+
+async function getData() {
+  try {
+    const result = await fetchUserData(2);
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getData();
