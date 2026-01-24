@@ -87,3 +87,10 @@ async function getData() {
 }
 
 getData();
+
+
+//repo practice
+createUser = async (data) => {
+    try {
+      logger.info(`UserRepo >>>> createUser >>>> Creating user with email: ${data.email}, role: ${data.role}`);
+      const user = await User.create(data);
