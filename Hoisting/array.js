@@ -94,3 +94,10 @@ createUser = async (data) => {
     try {
       logger.info(`UserRepo >>>> createUser >>>> Creating user with email: ${data.email}, role: ${data.role}`);
       const user = await User.create(data);
+
+//select Elements
+
+const title = document.getElementById("title");
+
+
+const items = document.getElementsByClassName("item");
