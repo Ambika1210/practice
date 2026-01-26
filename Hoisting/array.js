@@ -97,7 +97,15 @@ createUser = async (data) => {
 
 //select Elements
 
-const title = document.getElementById("title");
+// const title = document.getElementById("title");
 
 
-const items = document.getElementsByClassName("item");
+// const items = document.getElementsByClassName("item");
+
+
+//query selector
+const items = document.querySelectorAll(".item");
+
+items.forEach((el) => {
+  el.style.color = "green";
+});
