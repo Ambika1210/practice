@@ -109,3 +109,19 @@ const items = document.querySelectorAll(".item");
 items.forEach((el) => {
   el.style.color = "green";
 });
+
+
+//try catch practice
+
+function checkAge(age) {
+  if (age < 18) {
+    throw new Error("Not eligible");
+  }
+  return "Eligible";
+}
+
+try {
+  console.log(checkAge(16));
+} catch (e) {
+  console.log(e.message);
+}
