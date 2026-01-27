@@ -125,3 +125,14 @@ try {
 } catch (e) {
   console.log(e.message);
 }
+
+
+//delete by id
+
+app.delete("/users/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  users = users.filter(user => user.id !== id);
+
+  res.json({ message: "User deleted" });
+});
