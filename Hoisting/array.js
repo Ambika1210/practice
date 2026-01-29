@@ -136,3 +136,29 @@ app.delete("/users/:id", (req, res) => {
 
   res.json({ message: "User deleted" });
 });
+
+
+// for each ka use
+
+const users = [
+  { id: 1, name: "Aman" },
+  { id: 2, name: "Ravi" }
+];
+
+users.forEach(user => {
+  console.log(user.name);
+});
+
+
+//callback funtion
+function greet(name, callback) {
+  console.log("Hi " + name);
+  callback();
+}
+
+function sayBye() {
+  console.log("Bye!");
+}
+
+greet("Ambika", sayBye);
+
